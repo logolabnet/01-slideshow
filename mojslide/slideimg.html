@@ -3,21 +3,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="slideimgstile.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     
     <div class="slide">
-        <div class="video">video</div>
 
-        <div class="logo">logo</div>
+        <div class="video">
+            <video controls>
+            <source src="video/logolab.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="logo">
+            <img src="img/logolab-zlatna-natpis-bijeli.png">
+        </div>
 
         <div class="mocap">
 
-            <div class="moc1">moc1</div>
+            <div class="moc1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="img/lab-logo-mockup1.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/lab-logo-mockup2.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/lab-logo-mockup3.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/lab-logo-mockup3.jpg">
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
 
-            <div class="moc2">moc2</div>
+            </div>
+
+            <div class="moc2">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/lab-logo-mockup4.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/lab-logo-mockup5.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/lab-logo-mockup6.jpg">
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            
         </div>
+
+    </div>
+                <!-- Swiper JS -->
+                <script src="js/swiper-bundle.min.js"></script>
 
         <div class="text">
             <h2>Naslov</h2>
@@ -28,7 +82,7 @@
             omnis temporibus perferendis porro sit earum minus.
             
         </p>
-        </div>
+        
     </div>
 </body>
 </html>

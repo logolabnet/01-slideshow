@@ -2,47 +2,69 @@
     box-sizing:border-box;
   }
   
+  body {
+    background: #e2e1e0;
+    text-align: center;
+  }
   .slide{
-      width: 160vmin;
-      height: 80vmin;
-      background-color: blue;
+      width: 162vmin;
+      height: 90vmin;
+      background-color:  #e2e1e0;
       float: left;
-      position: absolute;
+      position: relative;
       
   }
 
  
   .video{
-      width: 75%;
+      width: 122vmin;
       height: 80%;
-      background-color: brown;
+      background-color: #333333;
       float: left;
-      position: relative;
+      position: absolute;
+      padding: 1vmin; 
+      padding-top: 2vmin;
+          
   }
-  .video img{
+
+  .video video {
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    
 }
 
   .logo{
-      width: 25%;
-      height: 26%;
-      float: left;
-      background-color: darkslategray;
-      position: relative;
+      width: 40vmin;
+      height: 25%;
+      margin-left: 122vmin;
+      background-color: #333333;
+      position: absolute;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     
+
+  }
+
+  .logo:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   .logo img{
     width: 100%;
     height: auto;
+    padding: 0 1.5vmin;
+    padding-top: 3vmin;
+
 }
 
 
   .mocap{
-      width: 25%;
-      height: 54%;
-      background-color: coral;
+      width: 40vmin;
+      height: 51%;
+      background-color: #e2e1e0;
       float: left;
-      position: relative;
+      position: absolute;
+      margin-left: 122vmin;
+      margin-top: 20vmin;
 
   }
 
@@ -51,10 +73,36 @@
    .moc1{
       width: 100%;
       height: 50%;
-      background-color: darkgreen;
+      background-color:  #e2e1e0;
       float: left;
       position: relative;
+      margin-top: 1vmin;
     
+  }
+
+  .swiper-container {
+    width: 100%;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:  #e2e1e0;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 
   .moc1 img{
@@ -62,12 +110,15 @@
       height: auto;
   }
 
+  
+
   .moc2{
     width: 100%;
     height: 50%;
     background-color: darkgreen;
     float: left;
     position: relative;
+    margin-top: 1vmin;
   
 }
 
@@ -75,30 +126,44 @@
     width: 100%;
     height: auto;
 }
+
+
 .text{
-    
+    width: 162vmin;
     font-size: 2vmin;
-    float:left;
+    height: auto;
     padding:10px;
     overflow: auto;
-    background-color: gold;
-    position: relative;
+    background-color: #333333;
+    text-align: left;
+    margin-top: 70vmin;
+    
+}
 
+.text h2{
+    color: #ad8a55;
+    text-shadow:4px 1px 3px #000000;
+}
+
+.text p{
+    color: #ffffff;
 }
 
 
 
 @media screen and (max-width:350px){
     .slide{
-        width: 90vmin;
+        width: 92vmin;
         height: 220vmin;
         background-color: blue;
-        position: absolute;
+        position: relative;
+        padding-right: 1vmin;
+        padding-left: 1vmin;
         
     }
     .logo{
-        float: none;
-        top: 0;
+        float: left;
+        padding-top: 0;
         width: 100%;
         height: 20%;
         position: absolute;
@@ -123,5 +188,6 @@
         width: 100%;
         height: 40%;
         position: absolute;
+        
     }
 }
