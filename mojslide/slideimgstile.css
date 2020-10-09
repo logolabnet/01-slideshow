@@ -3,81 +3,14 @@
   }
   
   body {
-    background: #e2e1e0;
+ 
     text-align: center;
   }
   .slide{
-      width: 162vmin;
-      height: 90vmin;
-      background-color:  #e2e1e0;
-      float: left;
-      position: relative;
-      
-  }
-
- 
-  .video{
-      width: 122vmin;
-      height: 80%;
-      background-color: #333333;
-      float: left;
-      position: absolute;
-      padding: 1vmin; 
-      padding-top: 2vmin;
-          
-  }
-
-  .video video {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-    
-}
-
-  .logo{
-      width: 40vmin;
-      height: 25%;
-      margin-left: 122vmin;
-      background-color: #333333;
-      position: absolute;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-     
-
-  }
-
-  .logo:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-  .logo img{
-    width: 100%;
-    height: auto;
-    padding: 0 1.5vmin;
-    padding-top: 3vmin;
-
-}
-
-
-  .mocap{
-      width: 40vmin;
-      height: 51%;
-      background-color: #e2e1e0;
-      float: left;
-      position: absolute;
-      margin-left: 122vmin;
-      margin-top: 20vmin;
-
-  }
-
-  
-
-   .moc1{
-      width: 100%;
-      height: 50%;
-      background-color:  #e2e1e0;
-      float: left;
-      position: relative;
-      margin-top: 1vmin;
-    
+      width: 1200px;
+      height: 740px;
+      background-color:  #e2e0;
+      float: left;    
   }
 
   .swiper-container {
@@ -87,10 +20,9 @@
 
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
     background:  #e2e1e0;
 
-    /* Center slide text vertically */
+    /* Center slide text vertically 
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -102,43 +34,118 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
+    align-items: center;*/
   }
 
-  .moc1 img{
-      width: 100%;
-      height: auto;
+  div.swiper-button-prev,
+  div.swiper-button-next {
+  color: #333333;
   }
 
-  
+  .video{
+    width: 800px;
+    height: 610px;
+    background-color: #333333;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
 
-  .moc2{
+.video video {
+  width: 100%;
+  height: 610px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+}
+
+.logo{
+    width: 370px;
+    height: 190px;
+    margin-top: 10px;
+    margin-left: 820px;
+    background-color: #333333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 20 10 10 10;
+
+}
+
+.logo:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.logo img{
+  width: 100%;
+  height: auto;
+
+}
+
+.mocap{
+    width: 370px;
+    height: 400px;
+    background-color: #ffffff;
+    margin-left: 820px;
+    margin-top: 10px;
+}
+
+.moc1{
     width: 100%;
     height: 50%;
-    background-color: darkgreen;
+    background-color:  #333333;
     float: left;
     position: relative;
-    margin-top: 1vmin;
+    object-fit: cover;
+   
+}
+
+.moc1:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.moc1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   
 }
+
+.moc2{
+    width: 100%;
+    height: 50%;
+    background-color:  #333333;
+    float: left;
+    position: relative;
+    margin-top: 10px;  
+  
+}
+
+.moc2:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 
 .moc2 img{
     width: 100%;
     height: auto;
+    
 }
 
 
-.text{
-    width: 162vmin;
-    font-size: 2vmin;
+  .text{
+    width: 1180px;
     height: auto;
-    padding:10px;
+    font-size: 1.5vmin;
+    margin-left: 10px;
+    margin-top:20px;
     overflow: auto;
     background-color: #333333;
     text-align: left;
-    margin-top: 70vmin;
+    padding-left: 10px;
+   
     
 }
+
+.text:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
 
 .text h2{
     color: #ad8a55;
@@ -150,44 +157,62 @@
 }
 
 
+@media screen and (max-width:400px){
 
-@media screen and (max-width:350px){
+
     .slide{
-        width: 92vmin;
-        height: 220vmin;
-        background-color: blue;
-        position: relative;
-        padding-right: 1vmin;
-        padding-left: 1vmin;
-        
-    }
-    .logo{
-        float: left;
-        padding-top: 0;
-        width: 100%;
-        height: 20%;
-        position: absolute;
-    }
-    .video{
-        float: none;
-        top: 20%;
-        width: 100%;
-        height: 20%;
-        position: absolute;
-    }
-    .text{
-        float: none;
-        top: 40%;
-        width: 100%;
-        height: 20%;
-        position: absolute;
-    }
-    .mocap{
-        float: none;
-        top: 60%;
-        width: 100%;
-        height: 40%;
-        position: absolute;
-        
-    }
+      width: 390px;
+      height: 1000px;
+      background-color:  #e2e0;
+      position: relative;
+      
+  }
+  .logo{
+    width: 370px;
+    height: 190px;
+    margin: 10px;
+    clear: both;
+    position: fixed;
+
+
+}
+
+.video{
+    width: 370px;
+    height: 190px;
+    margin-top: 210px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    clear: both;
+    position: fixed;   
+}
+
+.video video {
+
+  height: 190px;
+
+}
+
+
+.text{
+    width: 370px;
+    height: auto;
+    font-size: 4vmin;
+    margin-bottom: 700px;
+    overflow: auto;
+    background-color: #333333;
+    text-align: left;
+    padding-left: 10px;
+    position: absolute;
+  
+    
+}
+.mocap{
+    width: 370px;
+    height: auto;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-top: 600px;
+
+}
 }
