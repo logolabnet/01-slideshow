@@ -33,7 +33,7 @@ body {
 
 }
 
-#swiper-slide {
+.swiper-slide {
 text-align: center;
 background:  #e2e1e0;
 padding-left: 10px;
@@ -51,27 +51,34 @@ color: #333333;
 
 /*kraj slajdera*/
 
+
+
 /*video*/
-.video{
-  max-width: 70%;
+#video{
+  max-width: 70% ;
   max-height: auto;
   background-color: #333333;
   float: left;
   padding-right: 10px;    
   align-items: center;
+  position: relative;
   
 }
 
 
-.video video {
+
+
+#video video {
 width: 100%;
 height: auto;
-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
 }
 
 
 /*logo*/
-.logo{
+#logo{
   max-width: 30%;
   background-color: #333333;
   padding: 20px 10px 10px 10px;
@@ -79,17 +86,17 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 
 }
 
-.logo:hover{
+#logo:hover{
 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.logo img{
+#logo img{
 width: 100%;
 height: auto;
 
 }
 
 /*mocap*/
-.moc{
+#moc{
   width: 30%;
   height: 307px; /*49%*/
   padding-top: 10px;
@@ -194,7 +201,7 @@ height: auto;
 }
 
 
-.text{
+#text{
   box-sizing: border-box; 
   border: 1px solid #333333;
   float: left;
@@ -207,15 +214,55 @@ height: auto;
 /* responsive: */
 
 
-
-
-@media screen and (max-width:992px) {
-  .swiper-container {
-      max-width: 992px;
-      
+@media only screen and (max-width: 400px) {
+  body {
+   
+    flex-direction:column;
   }
+
+  /*postavke slid*/
+
+.swiper-container {
+  max-width: 400px;
+  max-height: 1000px;
+  
+ 
+  
+
+
 }
 
 
+.swiper-wrapper{
+  max-width: 400px;
+  max-height: 1000px;
+
+}
+
+/*kraj slajdera*/
+
+/*logo*/
+#logo{
+  max-width: 100%;
+
+ 
 
 
+}
+
+/*video*/
+#video{
+  max-width: 100% ;
+  padding-right: 0px;  
+  
+}
+
+
+/*mocap*/
+#moc{
+  width: 100%;
+  
+  
+}
+
+}
