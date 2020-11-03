@@ -11,7 +11,7 @@ body {
   font-size: 14px;
   color: #000;
   margin: 0;
-  padding: 28px;
+  padding: 20px;
   text-align: center;
   box-sizing: border-box; 
 }
@@ -93,6 +93,7 @@ img{
   body {
    
     flex-direction:column;
+    padding: 6px;
   }
 
   .swiper-container {
@@ -148,10 +149,11 @@ img{
   body {
    
     flex-direction:column;
+    padding: 6px;
   }
 
   .swiper-container {
-    max-width: 400px;
+    max-width: 600px;
     max-height: 1000px;
   }
 
@@ -222,8 +224,8 @@ img{
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 85%;
+  max-width: 800px;
 }
 
 

@@ -1,7 +1,8 @@
+//settings for the horizontal swiper
 var swiperH = new Swiper('.swiper-container-h', {
     spaceBetween: 50,
     autoplay: {
-        delay: 4500,
+        delay: 4500, 
         disableOnInteraction: true,
       },
     pagination: {
@@ -10,6 +11,7 @@ var swiperH = new Swiper('.swiper-container-h', {
     },
 });
 
+//settings for the vertical swiper
 var swiperV = new Swiper('.swiper-container-v', {
     direction: 'vertical',
     spaceBetween: 50,
@@ -23,26 +25,30 @@ var swiperV = new Swiper('.swiper-container-v', {
     },
 });
 
+function show(){
+  var modal = document.getElementById("myModal");
 
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-
-
-var srcAtt = document.getElementById("myImg").getAttribute("src");
-srcAtt = srcAtt.replace(/(\.[\w\d_-]+)$/i, '_large$1');
-
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = srcAtt;
+  // Get the image and insert it inside the modal
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  
+  //change the source path by adding '_large' at the end of the file name
+  var srcAtt = document.getElementById("myImg").getAttribute("src");
+  srcAtt = srcAtt.replace(/(\.[\w\d_-]+)$/i, '_large$1');
+  
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = srcAtt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+  modal.style.display = "none";
+  }
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-modal.style.display = "none";
-}
+
