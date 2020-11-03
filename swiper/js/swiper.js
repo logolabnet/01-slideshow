@@ -5,6 +5,10 @@ var swiperH = new Swiper('.swiper-container-h', {
         delay: 4500, 
         disableOnInteraction: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     pagination: {
       el: '.swiper-pagination-h',
       clickable: true,
@@ -14,10 +18,10 @@ var swiperH = new Swiper('.swiper-container-h', {
 //settings for the vertical swiper
 var swiperV = new Swiper('.swiper-container-v', {
     direction: 'vertical',
-    spaceBetween: 50,
+    spaceBetween: 10,
     autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: true,
       },
     pagination: {
       el: '.swiper-pagination-v',
