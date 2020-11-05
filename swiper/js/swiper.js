@@ -18,7 +18,7 @@ var swiperH = new Swiper('.swiper-container-h', {
 //settings for the vertical swiper
 var swiperV = new Swiper('.swiper-container-v', {
     direction: 'vertical',
-    spaceBetween: 1,
+    spaceBetween: 8,
     autoplay: {
         delay: 2500,
         disableOnInteraction: true,
