@@ -13,6 +13,15 @@ var swiperH = new Swiper('.swiper-container-h', {
       el: '.swiper-pagination-h',
       clickable: true,
     },
+    on: {
+      slideChange: function(){
+        var video = document.getElementById("video-pause");
+      
+        video.pause();
+        
+        video.removeAttribute('id', 'video-pause');
+      },
+    }
 });
 
 //settings for the vertical swiper
@@ -56,4 +65,10 @@ function show(){
 }
 
 
+function pause(){
+  var video = document.getElementById("video-pause");
 
+  video.pause();
+  
+  video.removeAttribute('id', 'video-pause');
+}
