@@ -2,7 +2,7 @@
 var swiperH = new Swiper('.swiper-container-h', {
     spaceBetween: 50,
     autoplay: {
-        delay: 4500, 
+        delay: 10000, 
         disableOnInteraction: true,
       },
       navigation: {
@@ -30,7 +30,7 @@ var swiperV = new Swiper('.swiper-container-v', {
     spaceBetween: 8,
     mousewheel: true,
     autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: true,
       },
     pagination: {
@@ -61,6 +61,13 @@ function show(){
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
   modal.style.display = "none";
+  }
+
+  // When the user clicks outside the image, close the modal
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
   }
 }
 
